@@ -1,0 +1,6 @@
+if(errors)
+  h2.errors An error occurred while trying to make your request:
+  ul.errors 
+    each error in errors 
+      li 
+       = error.message

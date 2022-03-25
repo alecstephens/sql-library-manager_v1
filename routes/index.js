@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const book = require('../models/book');
+const { Book } = require('../models');
 
 // function to wrap each route
 function asyncHandler(cb) {

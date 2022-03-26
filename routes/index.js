@@ -21,7 +21,7 @@ router.get('/', asyncHandler(async (req, res) => {
 
 // Shows the full list of books
 router.get('/books', asyncHandler(async (req, res) => {
-  const books = await book.findAll();
+  const books = await Book.findAll();
   if(books) {
     res.render('index', {books});
   } else {
